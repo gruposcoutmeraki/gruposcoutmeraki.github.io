@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secciones · Grupo Scout Meraki</title>
+  <meta name="description" content="Descubre las secciones del Grupo Scout Meraki de Alzira: Castores, Lobatos, Tropa, Esculta y Rovers. Una sección para cada edad de 6 a 21 años.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.jpg" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="secciones.page.title">Nuestras secciones</h1>
+        <p data-i18n="secciones.page.subtitle">
+          Cada etapa tiene su propia aventura. Descubre cuál es la de tu hijo/a.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-secciones">
+          <p data-i18n="secciones.page.intro">
+            En Meraki creemos que cada edad tiene su forma de entender el mundo. Por eso trabajamos en cinco secciones adaptadas a cada etapa: desde los más pequeños que empiezan a descubrir el juego, hasta los jóvenes que construyen sus propios proyectos.
+          </p>
+        </div>
+
+        <div class="secciones-list">
+
+          <a href="secciones/castores.html" class="seccion-row">
+            <img src="img/secciones/castores.jpg" alt="Castores" class="seccion-row__img" loading="lazy">
+            <div class="seccion-row__body">
+              <span class="seccion-row__age">6 – 8 <span data-i18n="secciones.anios">años</span></span>
+              <h3 data-i18n="secciones.castores">Castores</h3>
+              <p data-i18n="sec.castores.resumen">El primer contacto con el escultismo. Juego, descubrimiento y amistad en un ambiente seguro y acogedor.</p>
+              <span class="btn btn--outline btn--small" data-i18n="secciones.vermas">Ver sección</span>
+            </div>
+          </a>
+
+          <a href="secciones/lobatos.html" class="seccion-row">
+            <img src="img/secciones/lobatos.jpg" alt="Lobatos" class="seccion-row__img" loading="lazy">
+            <div class="seccion-row__body">
+              <span class="seccion-row__age">8 – 11 <span data-i18n="secciones.anios">años</span></span>
+              <h3 data-i18n="secciones.lobatos">Lobatos</h3>
+              <p data-i18n="sec.lobatos.resumen">La imaginación y la aventura se encuentran. Pequeños grupos, grandes historias y las primeras acampadas.</p>
+              <span class="btn btn--outline btn--small" data-i18n="secciones.vermas">Ver sección</span>
+            </div>
+          </a>
+
+          <a href="secciones/tropa.html" class="seccion-row">
+            <img src="img/secciones/tropa.jpg" alt="Tropa" class="seccion-row__img" loading="lazy">
+            <div class="seccion-row__body">
+              <span class="seccion-row__age">11 – 14 <span data-i18n="secciones.anios">años</span></span>
+              <h3 data-i18n="secciones.tropa">Tropa</h3>
+              <p data-i18n="sec.tropa.resumen">La aventura de verdad: patrullas, campamentos, técnica scout y autonomía. Aquí se forjan las amistades más fuertes.</p>
+              <span class="btn btn--outline btn--small" data-i18n="secciones.vermas">Ver sección</span>
+            </div>
+          </a>
+
+          <a href="secciones/esculta.html" class="seccion-row">
+            <img src="img/secciones/esculta.jpg" alt="Esculta" class="seccion-row__img" loading="lazy">
+            <div class="seccion-row__body">
+              <span class="seccion-row__age">14 – 17 <span data-i18n="secciones.anios">años</span></span>
+              <h3 data-i18n="secciones.esculta">Esculta</h3>
+              <p data-i18n="sec.esculta.resumen">Los jóvenes toman las riendas. Proyectos propios, servicio a los demás y aventuras que marcan.</p>
+              <span class="btn btn--outline btn--small" data-i18n="secciones.vermas">Ver sección</span>
+            </div>
+          </a>
+
+          <a href="secciones/rovers.html" class="seccion-row">
+            <img src="img/secciones/rovers.jpg" alt="Rovers" class="seccion-row__img" loading="lazy">
+            <div class="seccion-row__body">
+              <span class="seccion-row__age">17 – 21 <span data-i18n="secciones.anios">años</span></span>
+              <h3 data-i18n="secciones.rovers">Rovers</h3>
+              <p data-i18n="sec.rovers.resumen">El paso a la vida adulta con compromiso y comunidad. Proyectos con impacto y el inicio del camino como monitores.</p>
+              <span class="btn btn--outline btn--small" data-i18n="secciones.vermas">Ver sección</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="insc.cta.titulo">¿Sigues con dudas?</h2>
+        <p class="section__text" data-i18n="secciones.cta.texto">
+          Escríbenos y te ayudamos a encontrar la sección perfecta para tu hijo/a.
+        </p>
+        <a href="https://wa.me/34600000000" class="btn btn--cta btn--large" target="_blank" rel="noopener" data-i18n="whatsapp.cta">
+          Únete al WhatsApp de familias
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

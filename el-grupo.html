@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Grupo · Grupo Scout Meraki</title>
+  <meta name="description" content="Conoce el Grupo Scout Meraki de Alzira (Nº 719, ASDE Scouts Valencians). Quiénes somos, nuestra historia, valores y voluntariados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.jpg"alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="elgrupo.title">El Grupo Scout Meraki</h1>
+        <p data-i18n="elgrupo.subtitle">Un proyecto educativo que crece con las familias de Alzira desde 2019.</p>
+      </div>
+    </section>
+
+    <!-- ============ QUIÉNES SOMOS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="historia">
+          <img src="img/grupo-historia.jpg" alt="El Grupo Scout Meraki" class="historia__img">
+          <div>
+            <h2 data-i18n="elgrupo.quienes.titulo">Quiénes somos</h2>
+            <p data-i18n="elgrupo.quienes.p1">
+              El Grupo Scout Meraki es un grupo de Alzira que forma parte de ASDE Scouts Valencians con el número 719. Nacimos en 2019 con una idea sencilla: que los niños y jóvenes pudieran crecer en un entorno donde los valores no son una teoría, sino algo que se vive cada sábado.
+            </p>
+            <p data-i18n="elgrupo.quienes.p2">
+              Acompañamos a niños y jóvenes de 6 a 21 años a través del juego, la naturaleza y el servicio a los demás. No somos una extraescolar más: somos una comunidad que crece junta, temporada tras temporada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EL NOMBRE ============ -->
+    <section class="section section--crema">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="elgrupo.nombre.titulo">¿Por qué "Meraki"?</h2>
+        <p class="section__text" data-i18n="elgrupo.nombre.texto">
+          Meraki significa dejar un poco de ti en cada cosa que haces. Esa es nuestra forma de entender el escultismo: compromiso, creatividad y ganas de aportar. No hacemos las cosas por cumplir, las hacemos con alma.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HISTORIA / LÍNEA DEL TIEMPO ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="elgrupo.timeline.titulo">Nuestra historia</h2>
+        <p class="section__lead" data-i18n="elgrupo.timeline.lead">
+          Un grupo joven, pero con hitos que ya merecen contarse.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__year" data-i18n="elgrupo.tl1.year">2019</div>
+            <h3 data-i18n="elgrupo.tl1.t">Nace Meraki</h3>
+            <p data-i18n="elgrupo.tl1.d">Se funda el Grupo Scout Meraki Nº 719 en Alzira, dentro de ASDE Scouts Valencians.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year" data-i18n="elgrupo.tl2.year">Ronda a ronda</div>
+            <h3 data-i18n="elgrupo.tl2.t">Crecer con constancia</h3>
+            <p data-i18n="elgrupo.tl2.d">Tres campamentos al año, reuniones semanales y una feria de Navidad que ya es tradición. La constancia es lo que nos ha hecho llegar hasta aquí.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year" data-i18n="elgrupo.tl3.year">Festival autonómico</div>
+            <h3 data-i18n="elgrupo.tl3.t">"Sempre seré scout"</h3>
+            <p data-i18n="elgrupo.tl3.d">Ganamos el Festival de la Cançó Scout de la Comunitat Valenciana con una canción propia, compuesta y defendida junto a nuestro grupo hermanado, el Grup Scout Alcora.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year" data-i18n="elgrupo.tl4.year">Festival nacional</div>
+            <h3 data-i18n="elgrupo.tl4.t">Subcampeones con la Comunitat Valenciana</h3>
+            <p data-i18n="elgrupo.tl4.d">Representamos a la Comunitat Valenciana en el Festival Nacional de la Cançó Scout y quedamos en segundo puesto. Un escenario que nos dio visibilidad y muchas ganas de seguir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALORES ============ -->
+    <section class="section section--crema">
+      <div class="container">
+        <h2 class="section__title" data-i18n="elgrupo.valores.titulo">Lo que nos mueve</h2>
+        <p class="section__lead" data-i18n="elgrupo.valores.lead">
+          Estos valores no se aprenden de memoria: se viven cada semana, en cada actividad, en cada campamento.
+        </p>
+
+        <div class="valores-grid">
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">🤝</div>
+            <h3 data-i18n="elgrupo.valor1.t">Compromiso</h3>
+            <p data-i18n="elgrupo.valor1.d">Aprendemos a cumplir lo que prometemos, con nosotros mismos y con el grupo.</p>
+          </div>
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">🌱</div>
+            <h3 data-i18n="elgrupo.valor2.t">Respeto por la naturaleza</h3>
+            <p data-i18n="elgrupo.valor2.d">Cuidamos el entorno porque es nuestro hogar. La naturaleza es maestra y compañera.</p>
+          </div>
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">🌍</div>
+            <h3 data-i18n="elgrupo.valor3.t">Servicio</h3>
+            <p data-i18n="elgrupo.valor3.d">Descubrimos que ayudar a los demás también nos hace crecer a nosotros.</p>
+          </div>
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">🌟</div>
+            <h3 data-i18n="elgrupo.valor4.t">Autonomía</h3>
+            <p data-i18n="elgrupo.valor4.d">Cada edad tiene su reto. Acompañamos a cada niño a valerse cada vez más por sí mismo.</p>
+          </div>
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">💛</div>
+            <h3 data-i18n="elgrupo.valor5.t">Comunidad</h3>
+            <p data-i18n="elgrupo.valor5.d">Aquí se construyen amistades que duran toda la vida. Nadie camina solo.</p>
+          </div>
+          <div class="valor-card">
+            <div class="valor-card__icon" aria-hidden="true">🔥</div>
+            <h3 data-i18n="elgrupo.valor6.t">Esfuerzo</h3>
+            <p data-i18n="elgrupo.valor6.d">Las cosas que de verdad merecen la pena requieren esfuerzo. Aquí se aprende a intentarlo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VOLUNTARIADOS ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="elgrupo.voluntariados.titulo">Voluntariados y servicio</h2>
+        <p class="section__lead" data-i18n="elgrupo.voluntariados.lead">
+          El escultismo no se queda dentro del grupo. Estas son las acciones con las que devolvemos a Alzira y a quienes más lo necesitan parte de lo que nos da.
+        </p>
+
+        <div class="voluntariados-grid">
+
+          <div class="voluntariado-card">
+            <div class="voluntariado-card__icon" aria-hidden="true">👵</div>
+            <span class="voluntariado-card__seccion" data-i18n="elgrupo.vol1.seccion">Tropa</span>
+            <h3 data-i18n="elgrupo.vol1.t">Personas mayores</h3>
+            <p data-i18n="elgrupo.vol1.d">A lo largo del curso, la Tropa Brownsea visita una residencia de mayores de Alzira. Juegos, charlas y compañía: los residentes esperan esas visitas con ilusión, y nosotros disfrutamos más de lo que imaginábamos.</p>
+          </div>
+
+          <div class="voluntariado-card">
+            <div class="voluntariado-card__icon" aria-hidden="true">🥣</div>
+            <span class="voluntariado-card__seccion" data-i18n="elgrupo.vol2.seccion">Esculta</span>
+            <h3 data-i18n="elgrupo.vol2.t">Amics de la Calle</h3>
+            <p data-i18n="elgrupo.vol2.d">La Escolta colabora con Amics de la Calle, una entidad de Valencia que acompaña a personas en situación de calle. Una experiencia que cambia la mirada y deja huella.</p>
+          </div>
+
+          <div class="voluntariado-card">
+            <div class="voluntariado-card__icon" aria-hidden="true">🎄</div>
+            <span class="voluntariado-card__seccion" data-i18n="elgrupo.vol3.seccion">Todo el grupo</span>
+            <h3 data-i18n="elgrupo.vol3.t">Feria de Navidad</h3>
+            <p data-i18n="elgrupo.vol3.d">Cada Navidad montamos una feria solidaria donde vendemos cosas hechas por nosotros. Es una de las actividades más esperadas del año y una forma de devolver al barrio parte de lo que nos da.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="section section--crema">
+      <div class="container">
+        <div class="equipo">
+          <img src="img/equipo-monitores.jpg" alt="Equipo de monitores del Grupo Scout Meraki" class="equipo__img">
+          <div>
+            <h2 data-i18n="elgrupo.equipo.titulo">El equipo de monitores</h2>
+            <p data-i18n="elgrupo.equipo.p1">
+              Detrás de cada actividad hay un equipo de monitores voluntarios que dedica su tiempo libre a preparar cada reunión, cada salida y cada campamento con ilusión y responsabilidad.
+            </p>
+            <p data-i18n="elgrupo.equipo.p2">
+              Todos nuestros monitores cuentan con la titulación oficial de tiempo libre y participan en formaciones continuas. Además, siguen el protocolo de protección al menor que garantiza un entorno seguro para todos los niños y jóvenes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROTECCIÓN AL MENOR ============ -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="proteccion">
+          <h2 data-i18n="elgrupo.prot.titulo">Nuestro compromiso con la protección al menor</h2>
+          <p data-i18n="elgrupo.prot.p1">Para las familias, la seguridad de sus hijos es lo primero. En Meraki lo tenemos tan claro que forma parte de nuestro día a día:</p>
+          <ul>
+            <li data-i18n="elgrupo.prot.1">Todos los monitores tienen el certificado de delitos de naturaleza sexual vigente.</li>
+            <li data-i18n="elgrupo.prot.2">Seguimos un protocolo de actuación ante cualquier situación que afecte a un menor.</li>
+            <li data-i18n="elgrupo.prot.3">Las ratios de monitores por niño están dentro de las recomendadas por la normativa.</li>
+            <li data-i18n="elgrupo.prot.4">Las familias siempre conocen dónde, cuándo y con quién están sus hijos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="elgrupo.cta.titulo">¿Quieres conocernos en persona?</h2>
+        <p class="section__text" data-i18n="elgrupo.cta.texto">Puedes venirte a una reunión o escribirnos. Te enseñamos el grupo sin compromiso.</p>
+        <a href="inscripcion.html" class="btn btn--cta btn--large" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

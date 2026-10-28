@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobatos · Grupo Scout Meraki</title>
+  <meta name="description" content="Lobatos, la sección del Grupo Scout Meraki para niños y niñas de 8 a 11 años. Imaginación, aventura y primeras acampadas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="../img/logo.png" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="../el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="../secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="../vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="../contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="../inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sec-hero">
+      <div class="container sec-hero__inner">
+        <img src="../img/secciones/lobatos.jpg" alt="Lobatos" class="sec-hero__img">
+        <div class="sec-hero__text">
+          <span class="sec-hero__age">8 – 11 <span data-i18n="secciones.anios">años</span></span>
+          <h1 data-i18n="secciones.lobatos">Lobatos</h1>
+          <p class="sec-hero__lead" data-i18n="sec.lobatos.lead">
+            Lobatos es la edad de la imaginación. Aquí empiezan a descubrir que pueden hacer cosas por sí mismos y que el trabajo en equipo multiplica la diversión.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sec-block">
+
+          <div>
+            <h2 data-i18n="sec.quehacen.titulo">¿Qué hacen?</h2>
+            <ul>
+              <li data-i18n="sec.lobatos.q1">Reunión semanal con juegos y dinámicas</li>
+              <li data-i18n="sec.lobatos.q2">Primeras acampadas de fin de semana</li>
+              <li data-i18n="sec.lobatos.q3">Técnicas scouts básicas: nudos, orientación, cabuyería</li>
+              <li data-i18n="sec.lobatos.q4">Talleres creativos y expresión artística</li>
+              <li data-i18n="sec.lobatos.q5">Salidas a la naturaleza y rutas sencillas</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 data-i18n="sec.aporta.titulo">¿Qué aporta a tu hijo/a?</h2>
+            <ul>
+              <li data-i18n="sec.lobatos.a1">Trabajo en equipo y respeto por los demás</li>
+              <li data-i18n="sec.lobatos.a2">Autonomía en la vida diaria</li>
+              <li data-i18n="sec.lobatos.a3">Curiosidad por el mundo natural</li>
+              <li data-i18n="sec.lobatos.a4">Capacidad de esfuerzo y superación</li>
+              <li data-i18n="sec.lobatos.a5">Amistades sólidas dentro del grupo</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="sec-block" style="margin-top:2.5rem;">
+          <div class="info-box">
+            <strong data-i18n="sec.horario.titulo">Cuándo nos vemos</strong>
+            <p data-i18n="sec.lobatos.horario">Reunión semanal los sábados por la mañana. Además, 3-4 salidas al año y un campamento de verano de una semana.</p>
+          </div>
+          <div class="info-box">
+            <strong data-i18n="sec.edad.titulo">Edad de entrada</strong>
+            <p data-i18n="sec.lobatos.edad">De 8 a 11 años. No hace falta experiencia previa: muchos niños empiezan directamente en Lobatos.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top:2.5rem;">
+          <a href="../inscripcion.html?seccion=lobatos#formulario" class="btn btn--cta btn--large" data-i18n="sec.inscribete">
+            Inscribir en esta sección
+          </a>
+        </div>
+
+        <nav class="sec-nav" aria-label="Navegación entre secciones">
+          <a href="castores.html">← <span data-i18n="secciones.castores">Castores</span></a>
+          <a href="tropa.html"><span data-i18n="secciones.tropa">Tropa</span> →</a>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="../contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="../inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · Grupo Scout Meraki</title>
+  <meta name="description" content="Contacta con el Grupo Scout Meraki de Alzira. WhatsApp, email, ubicación y formulario de contacto. Resolvemos tus dudas sin compromiso.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.jpg" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="contacto.title">Hablemos</h1>
+        <p data-i18n="contacto.subtitle">
+          Escríbenos por el canal que prefieras. Resolvemos cualquier duda sin compromiso.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contacto-grid">
+
+          <!-- ============ INFO DE CONTACTO ============ -->
+          <div>
+            <h2 class="section__title" style="text-align:left;" data-i18n="contacto.info.titulo">Datos de contacto</h2>
+
+            <div class="contacto-info">
+
+              <div class="contacto-item">
+                <div class="contacto-item__icon" aria-hidden="true">💬</div>
+                <div>
+                  <div class="contacto-item__label" data-i18n="contacto.whatsapp.label">WhatsApp de familias</div>
+                  <div class="contacto-item__value">
+                    <a href="https://wa.me/34600000000" target="_blank" rel="noopener">+34 600 000 000</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacto-item">
+                <div class="contacto-item__icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contacto-item__label" data-i18n="contacto.email.label">Email</div>
+                  <div class="contacto-item__value">
+                    <a href="mailto:hola@grupomeraki.es">hola@grupomeraki.es</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacto-item">
+                <div class="contacto-item__icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="contacto-item__label" data-i18n="contacto.donde.label">Dónde nos reunimos</div>
+                  <div class="contacto-item__value" data-i18n="contacto.donde.value">
+                    Alzira · Valencia<br>Nos reunimos los sábados por la mañana
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacto-item">
+                <div class="contacto-item__icon" aria-hidden="true">📱</div>
+                <div>
+                  <div class="contacto-item__label" data-i18n="contacto.redes.label">Síguenos</div>
+                  <div class="redes">
+                    <a href="https://instagram.com/grupomeraki" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://facebook.com/grupomeraki" target="_blank" rel="noopener">Facebook</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ============ FORMULARIO ============ -->
+          <div>
+            <form class="contacto-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+              <h2 data-i18n="contacto.form.titulo">Escríbenos</h2>
+              <p class="section__text" style="text-align:left;margin-bottom:0.5rem;" data-i18n="contacto.form.lead">
+                Rellena el formulario y te responderemos en menos de 48 h.
+              </p>
+
+              <label class="form__label">
+                <span data-i18n="contacto.form.nombre">Nombre *</span>
+                <input type="text" name="nombre" required autocomplete="name">
+              </label>
+
+              <label class="form__label">
+                <span data-i18n="contacto.form.email">Email *</span>
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+
+              <label class="form__label">
+                <span data-i18n="contacto.form.telefono">Teléfono</span>
+                <input type="tel" name="telefono" autocomplete="tel">
+              </label>
+
+              <label class="form__label">
+                <span data-i18n="contacto.form.mensaje">Mensaje *</span>
+                <textarea name="mensaje" rows="4" required></textarea>
+              </label>
+
+              <label class="form__check">
+                <input type="checkbox" name="acepta_privacidad" required>
+                <span data-i18n="contacto.form.privacidad">Acepto la política de privacidad *</span>
+              </label>
+
+              <button type="submit" class="btn btn--cta btn--block" data-i18n="contacto.form.enviar">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- ============ MAPA ============ -->
+        <div class="mapa">
+          <!-- Sustituye la URL del iframe por la ubicación real de vuestro local de reuniones -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.0!2d-0.43!3d39.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAlzira%2C%20Valencia!5e0!3m2!1ses!2ses!4v0000000000000"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación del Grupo Scout Meraki en Alzira"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CTA WHATSAPP ============ -->
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="contacto.cta.titulo">Lo más rápido: WhatsApp</h2>
+        <p class="section__text" data-i18n="contacto.cta.texto">
+          Si tienes prisa o prefieres hablar con alguien directamente, escríbenos al grupo de familias.
+        </p>
+        <a href="https://wa.me/34600000000" class="btn btn--cta btn--large" target="_blank" rel="noopener" data-i18n="whatsapp.cta">
+          Únete al WhatsApp de familias
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

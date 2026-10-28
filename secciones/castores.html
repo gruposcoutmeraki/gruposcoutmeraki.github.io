@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castores · Grupo Scout Meraki</title>
+  <meta name="description"
+    content="Castores, la sección del Grupo Scout Meraki para niños y niñas de 6 a 8 años. Juego, descubrimiento y amistad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="../img/logo.png" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="../el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="../secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="../vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="../contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="../inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sec-hero">
+      <div class="container sec-hero__inner">
+        <img src="../img/secciones/castores.jpg" alt="Castores" class="sec-hero__img">
+        <div class="sec-hero__text">
+          <span class="sec-hero__age">6 – 8 <span data-i18n="secciones.anios">años</span></span>
+          <h1 data-i18n="secciones.castores">Castores</h1>
+          <p class="sec-hero__lead" data-i18n="sec.castores.lead">
+            La primera aventura. Aquí empieza todo: el juego, los primeros amigos, la naturaleza y el descubrimiento de
+            que el mundo es enorme y bonito.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sec-block">
+
+          <div>
+            <h2 data-i18n="sec.quehacen.titulo">¿Qué hacen?</h2>
+            <ul>
+              <li data-i18n="sec.castores.q1">Juegos al aire libre cada semana</li>
+              <li data-i18n="sec.castores.q2">Talleres de manualidades y naturaleza</li>
+              <li data-i18n="sec.castores.q3">Primeras salidas de un día con la familia</li>
+              <li data-i18n="sec.castores.q4">Canciones, cuentos y dinámicas de grupo</li>
+              <li data-i18n="sec.castores.q5">Pequeños proyectos de servicio al barrio</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 data-i18n="sec.aporta.titulo">¿Qué aporta a tu hijo/a?</h2>
+            <ul>
+              <li data-i18n="sec.castores.a1">Autonomía en cosas pequeñas del día a día</li>
+              <li data-i18n="sec.castores.a2">Confianza para relacionarse con otros niños</li>
+              <li data-i18n="sec.castores.a3">Respeto por la naturaleza y los animales</li>
+              <li data-i18n="sec.castores.a4">Hábitos de cuidado y responsabilidad</li>
+              <li data-i18n="sec.castores.a5">Un grupo de amigos fuera del colegio</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="sec-block" style="margin-top:2.5rem;">
+          <div class="info-box">
+            <strong data-i18n="sec.horario.titulo">Cuándo nos vemos</strong>
+            <p data-i18n="sec.castores.horario">Reunión semanal los sábados por la mañana. Además, 2-3 salidas al año y
+              una acampada corta en primavera.</p>
+          </div>
+          <div class="info-box">
+            <strong data-i18n="sec.edad.titulo">Edad de entrada</strong>
+            <p data-i18n="sec.castores.edad">De 6 a 8 años. Si tu hijo/a está a punto de cumplir 6, escríbenos:
+              valoramos cada caso.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top:2.5rem;">
+          <a href="../inscripcion.html?seccion=castores#formulario" class="btn btn--cta btn--large"
+            data-i18n="sec.inscribete">
+            Inscribir en Castores
+          </a>
+        </div>
+
+        <nav class="sec-nav" aria-label="Navegación entre secciones">
+          <a href="../secciones.html">← <span data-i18n="sec.volver">Volver a secciones</span></a>
+          <a href="lobatos.html"><span data-i18n="secciones.lobatos">Lobatos</span> →</a>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="../contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="../inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

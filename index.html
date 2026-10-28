@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Scout Meraki · Alzira</title>
+  <meta name="description" content="Grupo Scout Meraki de Alzira. Educación en valores, aventura y amistad para niños y jóvenes de 6 a 21 años.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.jpg" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-label="Castellano">ES</button>
+          <button type="button" class="lang-btn" data-lang="va" aria-label="Valencià">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <img src="img/hero.jpg" alt="" class="hero__bg" aria-hidden="true">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title" data-i18n="hero.titulo">
+          Aquí no solo hacemos actividades: acompañamos a tus hijos a crecer.
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitulo">
+          Grupo Scout Meraki · Alzira. Educación en valores, aventura y amistad para niños y jóvenes de 6 a 21 años.
+        </p>
+        <a href="inscripcion.html" class="btn btn--cta btn--large" data-i18n="hero.cta">
+          Inscribir a mi hijo/a
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ VALORES ============ -->
+    <section class="valores">
+      <div class="container valores__grid">
+        <div class="valor">
+          <div class="valor__icon" aria-hidden="true">🌱</div>
+          <h3 data-i18n="valores.valores">Valores</h3>
+        </div>
+        <div class="valor">
+          <div class="valor__icon" aria-hidden="true">🏕️</div>
+          <h3 data-i18n="valores.aventura">Aventura</h3>
+        </div>
+        <div class="valor">
+          <div class="valor__icon" aria-hidden="true">🤝</div>
+          <h3 data-i18n="valores.amistad">Amistad</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ ES MERAKI ============ -->
+    <section class="section section--crema">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="grupo.titulo">¿Qué es Meraki?</h2>
+        <p class="section__text" data-i18n="grupo.texto">
+          Somos un grupo scout de Alzira que educa a niños y jóvenes a través del juego, la naturaleza y el servicio a los demás. No somos una extraescolar más: acompañamos a tus hijos a descubrir quiénes son y a construir amistades que duran toda la vida.
+        </p>
+        <a href="el-grupo.html" class="btn btn--outline" data-i18n="grupo.cta">Conoce el grupo</a>
+      </div>
+    </section>
+
+    <!-- ============ SECCIONES ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="secciones.titulo">Encuentra la sección de tu hijo/a</h2>
+        <p class="section__lead" data-i18n="secciones.lead">
+          Cada edad tiene su propia sección, con actividades adaptadas a su momento.
+        </p>
+
+        <div class="secciones-grid">
+          <a href="secciones/castores.html" class="seccion-card">
+            <img src="img/secciones/castores.jpg" alt="Castores" loading="lazy">
+            <div class="seccion-card__body">
+              <h3 data-i18n="secciones.castores">Castores</h3>
+              <p class="seccion-card__edad">6 – 8 <span data-i18n="secciones.anios">años</span></p>
+            </div>
+          </a>
+
+          <a href="secciones/lobatos.html" class="seccion-card">
+            <img src="img/secciones/lobatos.jpg" alt="Lobatos" loading="lazy">
+            <div class="seccion-card__body">
+              <h3 data-i18n="secciones.lobatos">Lobatos</h3>
+              <p class="seccion-card__edad">8 – 11 <span data-i18n="secciones.anios">años</span></p>
+            </div>
+          </a>
+
+          <a href="secciones/tropa.html" class="seccion-card">
+            <img src="img/secciones/tropa.jpg" alt="Tropa" loading="lazy">
+            <div class="seccion-card__body">
+              <h3 data-i18n="secciones.tropa">Tropa</h3>
+              <p class="seccion-card__edad">11 – 14 <span data-i18n="secciones.anios">años</span></p>
+            </div>
+          </a>
+
+          <a href="secciones/esculta.html" class="seccion-card">
+            <img src="img/secciones/esculta.jpg" alt="Esculta" loading="lazy">
+            <div class="seccion-card__body">
+              <h3 data-i18n="secciones.esculta">Esculta</h3>
+              <p class="seccion-card__edad">14 – 17 <span data-i18n="secciones.anios">años</span></p>
+            </div>
+          </a>
+
+          <a href="secciones/rovers.html" class="seccion-card">
+            <img src="img/secciones/rovers.jpg" alt="Rovers" loading="lazy">
+            <div class="seccion-card__body">
+              <h3 data-i18n="secciones.rovers">Rovers</h3>
+              <p class="seccion-card__edad">17 – 21 <span data-i18n="secciones.anios">años</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRÓXIMAS CITAS ============ -->
+    <section class="section section--verde">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="citas.titulo">Próximas citas clave</h2>
+        <ul class="citas-list">
+          <li><strong data-i18n="citas.1.fecha">Septiembre</strong> · <span data-i18n="citas.1.texto">Apertura de inscripciones</span></li>
+          <li><strong data-i18n="citas.2.fecha">Octubre</strong> · <span data-i18n="citas.2.texto">Inicio del curso scout</span></li>
+          <li><strong data-i18n="citas.3.fecha">Julio</strong> · <span data-i18n="citas.3.texto">Campamento de verano</span></li>
+        </ul>
+        <p class="citas-note" data-i18n="citas.nota">
+          Las fechas concretas se confirman por el grupo de WhatsApp de familias.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="testimonios.titulo">Lo que dicen las familias</h2>
+        <div class="testimonios">
+          <blockquote class="testimonio">
+            <p data-i18n="testimonios.1.texto">
+              "Mi hijo ha ganado autonomía y confianza en sí mismo. Ahora es él quien nos recuerda cuándo toca reunión."
+            </p>
+            <cite data-i18n="testimonios.1.autor">— Madre de un lobato</cite>
+          </blockquote>
+          <blockquote class="testimonio">
+            <p data-i18n="testimonios.2.texto">
+              "Lo que más valoro es el ambiente. Se nota que los monitores disfrutan con lo que hacen."
+            </p>
+            <cite data-i18n="testimonios.2.autor">— Padre de una exploradora</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHATSAPP CTA ============ -->
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="whatsapp.titulo">¿Tienes dudas? Escríbenos</h2>
+        <p class="section__text" data-i18n="whatsapp.texto">
+          Estamos en el grupo de WhatsApp de familias y en redes sociales. Resolvemos cualquier duda sin compromiso.
+        </p>
+        <a href="https://wa.me/34600000000" class="btn btn--cta btn--large" target="_blank" rel="noopener" data-i18n="whatsapp.cta">
+          Únete al WhatsApp de familias
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

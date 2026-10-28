@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rovers · Grupo Scout Meraki</title>
+  <meta name="description" content="Rovers, la sección del Grupo Scout Meraki para jóvenes de 17 a 21 años. Compromiso, comunidad y camino hacia el voluntariado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="../img/logo.png" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="../el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="../secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="../vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="../contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="../inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sec-hero">
+      <div class="container sec-hero__inner">
+        <img src="../img/secciones/rovers.jpg" alt="Rovers" class="sec-hero__img">
+        <div class="sec-hero__text">
+          <span class="sec-hero__age">17 – 21 <span data-i18n="secciones.anios">años</span></span>
+          <h1 data-i18n="secciones.rovers">Rovers</h1>
+          <p class="sec-hero__lead" data-i18n="sec.rovers.lead">
+            Rovers es el paso a la vida adulta. Es la etapa del compromiso personal, los proyectos con impacto en el entorno y el inicio del camino como monitores del grupo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sec-block">
+
+          <div>
+            <h2 data-i18n="sec.quehacen.titulo">¿Qué hacen?</h2>
+            <ul>
+              <li data-i18n="sec.rovers.q1">Proyectos sociales y de servicio con impacto real</li>
+              <li data-i18n="sec.rovers.q2">Viajes y rutas de varios días por España y Europa</li>
+              <li data-i18n="sec.rovers.q3">Formación como monitores y apoyo a las otras secciones</li>
+              <li data-i18n="sec.rovers.q4">Encuentros con otros grupos scouts</li>
+              <li data-i18n="sec.rovers.q5">Comunidad, celebración y vida en grupo</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 data-i18n="sec.aporta.titulo">¿Qué aporta a tu hijo/a?</h2>
+            <ul>
+              <li data-i18n="sec.rovers.a1">Madurez personal y compromiso social</li>
+              <li data-i18n="sec.rovers.a2">Experiencia real de gestión de proyectos</li>
+              <li data-i18n="sec.rovers.a3">Habilidades de liderazgo y comunicación</li>
+              <li data-i18n="sec.rovers.a4">Red de contactos y amistades duraderas</li>
+              <li data-i18n="sec.rovers.a5">Un camino hacia el voluntariado y la vida adulta</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="sec-block" style="margin-top:2.5rem;">
+          <div class="info-box">
+            <strong data-i18n="sec.horario.titulo">Cuándo nos vemos</strong>
+            <p data-i18n="sec.rovers.horario">Reunión quincenal y proyectos autogestionados. Además, salidas periódicas y un campamento de verano.</p>
+          </div>
+          <div class="info-box">
+            <strong data-i18n="sec.edad.titulo">Edad de entrada</strong>
+            <p data-i18n="sec.rovers.edad">De 17 a 21 años. La antesala del voluntariado en el grupo.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top:2.5rem;">
+          <a href="../inscripcion.html?seccion=rovers#formulario" class="btn btn--cta btn--large" data-i18n="sec.inscribete">
+            Inscribir en esta sección
+          </a>
+        </div>
+
+        <nav class="sec-nav" aria-label="Navegación entre secciones">
+          <a href="esculta.html">← <span data-i18n="secciones.esculta">Esculta</span></a>
+          <a href="../secciones.html"><span data-i18n="sec.volver">Volver a secciones</span> →</a>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="../contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="../inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

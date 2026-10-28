@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción · Grupo Scout Meraki</title>
+  <meta name="description" content="Inscribe a tu hijo/a en el Grupo Scout Meraki de Alzira. Proceso sencillo, cuotas transparentes y formulario online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ CABECERA (igual que el resto) ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.png" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO PEQUEÑO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="insc.title">Inscribir a mi hijo/a en Meraki</h1>
+        <p data-i18n="insc.subtitle">
+          Rellena el formulario y nos pondremos en contacto contigo en menos de 48 horas.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PASOS ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="insc.pasos.titulo">Cómo funciona</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3 data-i18n="insc.paso1.t">Rellena el formulario</h3>
+            <p data-i18n="insc.paso1.d">Nos cuentas lo básico de tu hijo/a. Solo 2 minutos.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3 data-i18n="insc.paso2.t">Te llamamos</h3>
+            <p data-i18n="insc.paso2.d">Un monitor se pone en contacto contigo para resolver dudas y confirmar plaza.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3 data-i18n="insc.paso3.t">¡Bienvenido/a!</h3>
+            <p data-i18n="insc.paso3.d">Tu hijo/a ya puede empezar a vivir Meraki con su sección.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMULARIO ============ -->
+    <section class="section section--crema" id="formulario">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="insc.form.titulo">Formulario de inscripción</h2>
+        <p class="section__lead" data-i18n="insc.form.lead">
+          Los campos marcados con * son obligatorios. Tus datos solo se usan para gestionar la inscripción.
+        </p>
+
+        <!-- Cambia el action por tu endpoint de Formspree cuando lo tengas -->
+        <form class="form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+
+          <fieldset class="form__fieldset">
+            <legend data-i18n="insc.form.seccion1">Datos del niño/a</legend>
+
+            <div class="form__row">
+              <label for="nombre-nino" class="form__label">
+                <span data-i18n="insc.form.nombre">Nombre completo *</span>
+                <input type="text" id="nombre-nino" name="nombre_nino" required autocomplete="name">
+              </label>
+
+              <label for="fecha-nac" class="form__label">
+                <span data-i18n="insc.form.nacimiento">Fecha de nacimiento *</span>
+                <input type="date" id="fecha-nac" name="fecha_nacimiento" required>
+              </label>
+            </div>
+
+            <label for="seccion" class="form__label">
+              <span data-i18n="insc.form.seccion">Sección *</span>
+              <select id="seccion" name="seccion" required>
+                <option value="" data-i18n="insc.form.seccion.ph">— Selecciona una sección —</option>
+                <option value="castores" data-i18n="secciones.castores">Castores (6-8 años)</option>
+                <option value="lobatos" data-i18n="secciones.lobatos">Lobatos (8-11 años)</option>
+                <option value="tropa" data-i18n="secciones.tropa">Tropa (11-14 años)</option>
+                <option value="esculta" data-i18n="secciones.esculta">Esculta (14-17 años)</option>
+                <option value="rovers" data-i18n="secciones.rovers">Rovers (17-21 años)</option>
+              </select>
+            </label>
+
+            <label for="alergias" class="form__label">
+              <span data-i18n="insc.form.alergias">Alergias o información médica relevante</span>
+              <textarea id="alergias" name="alergias" rows="2" placeholder="Opcional"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend data-i18n="insc.form.seccion2">Datos del padre / madre / tutor</legend>
+
+            <div class="form__row">
+              <label for="nombre-tutor" class="form__label">
+                <span data-i18n="insc.form.tutor">Nombre completo *</span>
+                <input type="text" id="nombre-tutor" name="nombre_tutor" required>
+              </label>
+
+              <label for="telefono" class="form__label">
+                <span data-i18n="insc.form.telefono">Teléfono *</span>
+                <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="600 000 000">
+              </label>
+            </div>
+
+            <label for="email" class="form__label">
+              <span data-i18n="insc.form.email">Email *</span>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+            </label>
+
+            <label for="como-nos-conocio" class="form__label">
+              <span data-i18n="insc.form.conocio">¿Cómo nos has conocido?</span>
+              <select id="como-nos-conocio" name="como_nos_conocio">
+                <option value="" data-i18n="insc.form.conocio.ph">— Opcional —</option>
+                <option value="boca" data-i18n="insc.form.conocio.boca">Por otra familia</option>
+                <option value="redes" data-i18n="insc.form.conocio.redes">Redes sociales</option>
+                <option value="cole" data-i18n="insc.form.conocio.cole">En el colegio</option>
+                <option value="web" data-i18n="insc.form.conocio.web">Buscando en internet</option>
+                <option value="otro" data-i18n="insc.form.conocio.otro">Otro</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend data-i18n="insc.form.seccion3">Consentimientos</legend>
+
+            <label class="form__check">
+              <input type="checkbox" name="acepta_privacidad" required>
+              <span data-i18n="insc.form.privacidad">He leído y acepto la política de privacidad *</span>
+            </label>
+
+            <label class="form__check">
+              <input type="checkbox" name="acepta_imagen">
+              <span data-i18n="insc.form.imagen">Autorizo el uso de imágenes de mi hijo/a en la web y redes del grupo</span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="btn btn--cta btn--large btn--block" data-i18n="insc.form.enviar">
+            Enviar inscripción
+          </button>
+
+          <p class="form__note" data-i18n="insc.form.nota">
+            Al enviar recibirás un email de confirmación. Nosotros te escribiremos en menos de 48 h.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ CUOTAS ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="insc.cuotas.titulo">Cuotas y qué incluyen</h2>
+        <p class="section__lead" data-i18n="insc.cuotas.lead">
+          Sin sorpresas: esto es todo lo que cuesta formar parte de Meraki.
+        </p>
+
+        <div class="cuotas-grid">
+          <div class="cuota-card">
+            <h3 data-i18n="insc.cuota1.t">Cuota anual</h3>
+            <p class="cuota-card__precio">XX €</p>
+            <p data-i18n="insc.cuota1.d">Incluye todas las reuniones, actividades ordinarias y seguro.</p>
+          </div>
+          <div class="cuota-card">
+            <h3 data-i18n="insc.cuota2.t">Campamento de verano</h3>
+            <p class="cuota-card__precio">XX €</p>
+            <p data-i18n="insc.cuota2.d">Opcional. Incluye alojamiento, manutención y actividades.</p>
+          </div>
+          <div class="cuota-card">
+            <h3 data-i18n="insc.cuota3.t">Material inicial</h3>
+            <p class="cuota-card__precio">XX €</p>
+            <p data-i18n="insc.cuota3.d">Pañuelo, camiseta y documentación del grupo. Pago único.</p>
+          </div>
+        </div>
+
+        <p class="section__text" style="margin-top:2rem;" data-i18n="insc.cuotas.becas">
+          Meraki cree que ninguna familia debe quedarse fuera por motivos económicos. Si lo necesitas, escríbenos y buscamos una solución.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--crema">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="faq.titulo">Preguntas frecuentes</h2>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary data-i18n="faq.1.q">¿Qué edad tiene que tener mi hijo/a?</summary>
+            <p data-i18n="faq.1.a">Desde los 6 años (Castores) hasta los 21 (Rovers). Si tu hijo/a tiene otra edad, escríbenos y lo valoramos.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.2.q">¿Puedo apuntarle a mitad de curso?</summary>
+            <p data-i18n="faq.2.a">Sí. Aceptamos inscripciones durante todo el curso siempre que haya plaza en su sección.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.3.q">¿Necesita uniforme?</summary>
+            <p data-i18n="faq.3.a">Solo el pañuelo del grupo y la camiseta oficial en actividades formales. Para el día a día, ropa cómoda.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.4.q">¿Los monitores están titulados?</summary>
+            <p data-i18n="faq.4.a">Sí. Todos nuestros monitores cuentan con titulación oficial de tiempo libre y siguen el protocolo de protección al menor.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.5.q">¿Qué pasa si mi hijo/a tiene alergias?</summary>
+            <p data-i18n="faq.5.a">Lo indicas en el formulario y los monitores de su sección lo tienen en cuenta en todo momento. También guardamos la medicación si fuera necesaria.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.6.q">¿Hacéis actividades los fines de semana?</summary>
+            <p data-i18n="faq.6.a">La reunión semanal es fija. Además hay 3-4 salidas al año y un campamento de verano. Todo se comunica con antelación.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary data-i18n="faq.7.q">¿Cómo se gestionan las comunicaciones?</summary>
+            <p data-i18n="faq.7.a">Por el grupo de WhatsApp de familias y por email para lo importante. La web es la referencia pública.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="insc.cta.titulo">¿Sigues con dudas?</h2>
+        <p class="section__text" data-i18n="insc.cta.texto">
+          Escríbenos por WhatsApp o email. Resolvemos cualquier pregunta sin compromiso.
+        </p>
+        <a href="https://wa.me/34600000000" class="btn btn--cta btn--large" target="_blank" rel="noopener" data-i18n="whatsapp.cta">
+          Únete al WhatsApp de familias
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (igual que el resto) ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

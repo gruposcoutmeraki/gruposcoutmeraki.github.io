@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivir Meraki · Grupo Scout Meraki</title>
+  <meta name="description" content="Crónicas, fotos y aventuras del Grupo Scout Meraki de Alzira. Festivales, campamentos y vida de grupo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Grupo Scout Meraki, ir a inicio">
+        <img src="img/logo.jpg" alt="Logo Grupo Scout Meraki" width="48" height="48">
+        <span>Meraki</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="el-grupo.html" data-i18n="nav.grupo">El Grupo</a></li>
+          <li><a href="secciones.html" data-i18n="nav.secciones">Secciones</a></li>
+          <li><a href="vivir-meraki.html" data-i18n="nav.vivir">Vivir Meraki</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+        <a href="inscripcion.html" class="btn btn--cta btn--small" data-i18n="nav.inscribete">Inscríbete</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="va">VA</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="vivir.title">Vivir Meraki</h1>
+        <p data-i18n="vivir.subtitle">Crónicas, fotos y aventuras de lo que hacemos cada semana.</p>
+      </div>
+    </section>
+
+    <!-- ============ CRÓNICA DESTACADA ============ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-i18n="vivir.destacada.titulo">La última aventura</h2>
+
+        <div class="cronica-destacada">
+          <img src="img/cronicas/destacada.jpg" alt="Campamento de verano" class="cronica-destacada__img">
+          <div class="cronica-destacada__body">
+            <span class="cronica-destacada__tag" data-i18n="vivir.destacada.tag">Campamento de verano</span>
+            <h2 data-i18n="vivir.destacada.h">Tres campamentos al año, y el de verano es el que más se espera</h2>
+            <p data-i18n="vivir.destacada.p">Cada Ronda Solar vivimos tres acampadas. Pero si hay una que esperamos con ganas es la de verano: días de naturaleza, convivencia y aventura que se recuerdan todo el año.</p>
+            <span class="cronica-destacada__date" data-i18n="vivir.destacada.fecha">Verano 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LISTADO DE CRÓNICAS ============ -->
+    <section class="section section--crema">
+      <div class="container">
+        <h2 class="section__title" data-i18n="vivir.cronicas.titulo">Todas las crónicas</h2>
+        <p class="section__lead" data-i18n="vivir.cronicas.lead">Los momentos que han marcado al grupo. Estas son las historias que nos gusta contar.</p>
+
+        <div class="cronicas-grid">
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-1.jpg" alt="Festival autonómico" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica1.tag">Festival</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica1.fecha">Autonómico</span>
+              </div>
+              <h3 data-i18n="vivir.cronica1.h">"Sempre seré scout": ganadores del Festival de la Cançó Scout</h3>
+              <p data-i18n="vivir.cronica1.p">Ganamos el Festival de la Cançó Scout de la Comunitat Valenciana con una canción propia, compuesta y defendida junto a nuestro grupo hermanado, el Grup Scout Alcora.</p>
+            </div>
+          </article>
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-2.jpg" alt="Festival Nacional" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica2.tag">Festival</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica2.fecha">Nacional</span>
+              </div>
+              <h3 data-i18n="vivir.cronica2.h">Subcampeones con la Comunitat Valenciana</h3>
+              <p data-i18n="vivir.cronica2.p">Representamos a la Comunitat Valenciana en el Festival Nacional de la Cançó Scout y quedamos en segundo puesto. Un escenario que nos dio visibilidad y muchas ganas de seguir.</p>
+            </div>
+          </article>
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-3.jpg" alt="Campamento de verano" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica3.tag">Campamento</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica3.fecha">Verano</span>
+              </div>
+              <h3 data-i18n="vivir.cronica3.h">El campamento de verano: el momento más esperado del año</h3>
+              <p data-i18n="vivir.cronica3.p">Días de naturaleza, convivencia y aventura. Es el campamento que todos esperan con más ganas y el que deja los mejores recuerdos.</p>
+            </div>
+          </article>
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-4.jpg" alt="Campamento de invierno" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica4.tag">Campamento</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica4.fecha">Invierno</span>
+              </div>
+              <h3 data-i18n="vivir.cronica4.h">El campamento de invierno: frío fuera, calor dentro</h3>
+              <p data-i18n="vivir.cronica4.p">Uno de los tres campamentos anuales. Días de convivencia, fuego y trabajo en equipo que nos preparan para el resto del curso.</p>
+            </div>
+          </article>
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-5.jpg" alt="Feria de Navidad" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica5.tag">Tradición</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica5.fecha">Navidad</span>
+              </div>
+              <h3 data-i18n="vivir.cronica5.h">La feria de Navidad, una cita que ya es tradición</h3>
+              <p data-i18n="vivir.cronica5.p">Cada Navidad montamos una feria donde vendemos cosas hechas por nosotros. Es una de las actividades más esperadas del año y una forma de compartir el espíritu del grupo con todo el barrio.</p>
+            </div>
+          </article>
+
+          <article class="cronica-card">
+            <img src="img/cronicas/cronica-6.jpg" alt="Grupo hermanado Alcora" class="cronica-card__img">
+            <div class="cronica-card__body">
+              <div class="cronica-card__meta">
+                <span class="cronica-card__tag" data-i18n="vivir.cronica6.tag">Hermanamiento</span>
+                <span class="cronica-card__date" data-i18n="vivir.cronica6.fecha">Alcora</span>
+              </div>
+              <h3 data-i18n="vivir.cronica6.h">Nuestro grupo hermanado: el Grup Scout Alcora</h3>
+              <p data-i18n="vivir.cronica6.p">Compartimos aventuras, festivales y escenario con el Grup Scout Alcora. Una alianza que nos ha llevado juntos a ganar el autonómico y a pisar un nacional.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SÍGUENOS ============ -->
+    <section class="section">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="vivir.redes.titulo">Síguenos en redes</h2>
+        <p class="section__text" data-i18n="vivir.redes.texto">Publicamos fotos y novedades cada semana. La mejor forma de ver el día a día del grupo.</p>
+        <div class="redes" style="justify-content:center;">
+          <a href="https://instagram.com/merakiscouts" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/merakiscouts" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://wa.me/34600000000" target="_blank" rel="noopener" data-i18n="whatsapp.cta">WhatsApp de familias</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section section--cta">
+      <div class="container container--narrow text-center">
+        <h2 class="section__title" data-i18n="vivir.cta.titulo">¿Quieres que tu hijo/a viva esto?</h2>
+        <p class="section__text" data-i18n="vivir.cta.texto">Cada sábado es una nueva aventura. Inscríbelo y deja que lo descubra.</p>
+        <a href="inscripcion.html" class="btn btn--cta btn--large" data-i18n="hero.cta">Inscribir a mi hijo/a</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <strong>Grupo Scout Meraki</strong>
+        <p data-i18n="footer.ciudad">Alzira · Valencia</p>
+      </div>
+      <div class="footer__col">
+        <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+        <a href="inscripcion.html" data-i18n="nav.inscribete">Inscríbete</a>
+      </div>
+      <div class="footer__col footer__badges">
+        <span data-i18n="footer.monitores">Monitores con titulación oficial</span>
+        <span data-i18n="footer.proteccion">Protocolo de protección al menor</span>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span id="year"></span> Grupo Scout Meraki</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
